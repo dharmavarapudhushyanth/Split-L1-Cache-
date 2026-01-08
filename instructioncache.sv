@@ -1,13 +1,3 @@
-/**********************************************************************/
-/*              L1 SPILT CACHE                                        */										
-/* Description: This system verilog file designs the instruction cache*/
-/*              of L1 spilt Cache for 32 bit processor. L1 instruction*/			
-/*              is 4-way set associative and consists of 16k sets and */
-/*              64 byte lines.Cache employs LRU replacement policy    */
-/* Authors : 	Suggu Tagore                                             */
-/* 			                                                          */
-/**********************************************************************/
-
 
 module InstructionCache(clock,reset,addressbits,n);
 
@@ -180,5 +170,6 @@ endtask
 
 
 //initial begin $monitor("cacheline[index][0] - %h, cacheline[index][1]= %h,cacheline[index][2]= %h,cacheline[index][3]= %h",cacheline[index][0].Tag,cacheline[index][1].Tag,cacheline[index][2].Tag,cacheline[index][3].Tag); end
+
 
 endmodule
