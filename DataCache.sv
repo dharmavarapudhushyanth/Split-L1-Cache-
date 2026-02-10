@@ -5,7 +5,7 @@
 /*              is 8-way set associative and consists of 16k sets and */
 /*              64 byte lines.L1 data cache is write-back using write-*/
 /*              back. Cache employs LRU replacement policy            */
-/* Authors : 	Suggu Tagore                                          */
+/* Authors : 	Suggu Tagore, Dhushyanth Dharmavarapu                 */
 /* 			                                                          */
 /**********************************************************************/
 
@@ -268,5 +268,6 @@ else
 		$display("DATA CACHE HIT ratio = %f", hitratio);
 	end
 endtask 
+
 
 endmodule
